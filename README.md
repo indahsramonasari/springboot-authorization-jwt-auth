@@ -35,14 +35,19 @@ price varchar(100) NULL
 );
 
 - make sure the configuration in application.properties are matches with your local configuration
+- redis configuration
 
-#run service
+use redis.yaml in this repository
+
+download and run this command : docker compose -f redis.yaml up -d
+
+# run service
 - mvn spring-boot:run
 - path url : http://localhost:7777/registloginservice/api
 
-#API documentation
+# API documentation
 - For full API documentation, this is the postman collections
   https://www.postman.com/collections/56aacbbd02cb80a055c1
 
-#Frontend web app
+# Frontend web app
 https://github.com/indahsramonasari/frontend-user-product-service.git
