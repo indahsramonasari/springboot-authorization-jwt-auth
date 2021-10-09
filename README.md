@@ -43,3 +43,6 @@ price varchar(100) NULL
 #API documentation
 - For full API documentation, this is the postman collections
   https://www.postman.com/collections/56aacbbd02cb80a055c1
+
+#Frontend web app
+https://github.com/indahsramonasari/frontend-user-product-service.git
