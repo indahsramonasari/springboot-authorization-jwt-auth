@@ -7,7 +7,7 @@ services:
     image: bitnami/redis:latest
     container_name: redis
     environment:
-      REDIS_PASSWORD: 'mywatermelonSUGAr3'
+      REDIS_PASSWORD: 'MyWatermelonSUGAr'
     command: /opt/bitnami/scripts/redis/run.sh --maxmemory 100mb
     volumes:
       - 'redis_data:/bitnami/redis/data'
