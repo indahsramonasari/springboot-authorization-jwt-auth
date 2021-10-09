@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  
+  redis:
+    ports:
+      - "6378:6379"
+    image: bitnami/redis:latest
+    container_name: redis
+    environment:
+      REDIS_PASSWORD: 'mywatermelonSUGAr3'
+    command: /opt/bitnami/scripts/redis/run.sh --maxmemory 100mb
+    volumes:
+      - 'redis_data:/bitnami/redis/data'
+
+volumes:
+  redis_data:
+    driver: local
